@@ -4,15 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Torque e braço de alavanca</title>
+    
     <link rel="stylesheet" href="/articles/torque/torque.css" />
-    <title>Document</title>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    <script
-      type="text/javascript"
-      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-    ></script>
   </head>
 
   <body>
@@ -32,62 +26,52 @@
       </p>
 
       <p>
-        A unidade de medida do torque, de acordo com o SI, é o newton-metro: $$N * M$$ </br>Além disso, o torque é uma grandeza vetorial, calculada pelo produto vetorial (ou produto externo) entre o braço de alavanca (r)(também chamada de linha de ação) e a força (F). O torque e o módulo do torque podem ser calculados por meio da seguinte expressão:
+        A unidade de medida do torque, de acordo com o SI, é o newton-metro $(N * M)$. Além disso, o torque é uma grandeza vetorial, calculada pelo produto vetorial (ou produto externo) entre o braço de alavanca (r)(também chamada de linha de ação) e a força (F). O torque e o módulo do torque podem ser calculados por meio da seguinte expressão:
 
         $$\vec{\tau} = \vec{r} * \vec{F} \longrightarrow \|\tau \| = r*F*\sin\theta $$
       </p>
 
       <p>
-        o mesmo que trabalho de uma força, entretanto torque é uma grandeza
-        vetorial, e trabalho uma grandeza escalar. A diferença está em que no
-        trabalho a força é paralela à distância e no Torque ou Momento, a força
-        é perpendicular à distância que une o ponto de aplicação ao eixo de
-        rotação.
+        É necessário que se observe um importante detalhe a respeito do cálculo do torque: seu sinal. Quando um torque produz uma rotação no sentido anti-horário, seu sinal é positivo, quando a rotação produzida acontece no sentido horário, ele é negativo. Além disso, é necessário ressaltar que o vetor torque é sempre perpendicular ao plano formado pelos vetores r e F.
       </p>
       <p>
-        Torque, ou momento de uma força, é a tendência que uma força tem de
-        rotacionar um corpo sobre o qual ela é aplicada. O torque é um vetor
-        perpendicular ao plano formado pelos vetores força e raio de rotação. O
-        vetor torque pode ser calculado por meio do produto vetorial entre força
-        e distância. Sempre que uma força for aplicada a alguma distância do
-        eixo de rotação de um corpo, esse corpo estará sujeito à rotação. Se
-        esse corpo não está rotacionando ou rotaciona com velocidade angular
-        constante, dizemos que ele se encontra em equilíbrio rotacional. O
-        equilíbrio rotacional indica que a resultante dos torques que atuam
-        sobre um corpo é nula e, por isso, esse corpo rotaciona com velocidade
-        constante ou nula. Em outras palavras, quando o torque resultante sobre
-        um corpo é nulo, esse corpo não apresenta aceleração angular. O torque
-        pode ser entendido como o agente dinâmico das rotações. Dessa forma, ele
-        está para os movimentos de rotação, assim como a força está para os
-        movimentos de translação. Se quisermos fazer que um corpo gire em torno
-        de algum ponto, devemos exercer um torque sobre ele.
+        O torque desempenha, para os movimentos de rotação, um papel similar àquele desempenhado pelas forças que são capazes de alterar o estado dos movimentos de translação. Quando se aplica uma força resultante não nula sobre um corpo, esse corpo desenvolve uma aceleração, no caso do torque, por sua vez, sua aplicação resulta no surgimento de uma aceleração angular. Em resumo, dizemos que o torque é o agente dinâmico da rotação.
       </p>
-      <h4>Unidade de torque</h4>
+      <img src="./images/torque-e-braco-de-alavanca.jpg" alt="">
       <p>
-        A unidade do torque, de acordo com o Sistema Internacional, é o Newton
-        vezes metro (N.m). Por definição, quando um corpo é rotacionado no
-        sentido horário, seu torque é negativo; no caso contrário, o torque
-        aplicado sobre ele tem módulo positivo. Além disso, a direção e o
-        sentido do vetor torque podem ser facilmente determinados por meio da
-        regra da mão direita. Confira o esquema a seguir:
-      </p>
-      <img src="./images/download (1).png" alt="" />
-    </article>
-    <article>
-      <h3>O que é braço de alavanca ?</h3>
-      <p>
-        Torque, ou momento de uma força, consiste na ação de girar ou torcer um
-        corpo em torno do seu eixo de rotação (polo) por meio da aplicação de
-        uma força. Para aplicarmos um torque sobre um corpo, é necessário que a
-        força aplicada sobre ele não coincida com o seu eixo de rotação. A
-        distância entre o ponto de aplicação da força e o polo é chamada de
-        braço de alavanca.
+        De acordo com a segunda lei de Newton, a força resultante sobre um corpo é igual à sua massa multiplicada pela aceleração obtida pelo corpo. De maneira similar, a segunda lei de Newton para rotações afirma que o torque resultante sobre um corpo é igual ao produto do momento de inércia pela aceleração angular obtida pelo corpo.
 
+        $$F = ma \hspace{3cm} \tau_{r} = l\alpha$$
+        <div>
+          $\tau_{r}$ - torque resultante $(N.m)$ </br>
+          $l$ - momento de inércia </br>
+          $\alpha$ - aceleração angular
+        </div>
+      </p>
+      <p>As fórmulas mostradas indicam que, na rotação, a aceleração angular obtida é inversamente proporcional ao momento de inércia do corpo. De maneira similar, a aceleração obtida por um corpo em razão da aplicação de uma força é inversamente proporcional à sua inércia.</p>
+      <p>O momento de inércia é a resistência dos corpos em alterar o seu estado de rotação. Diferentemente da inércia, o momento de inércia depende de fatores, como a distribuição de massa e o formato de um corpo, além da posição de seu eixo de rotação.</p>
+      <h4>Torque e momento angular</h4>
+      <p>A definição clássica da segunda lei de Newton diz que a força resultante sobre um corpo é igual à variação de sua quantidade de movimento, durante certo intervalo de tempo. A mesma definição aplica-se ao torque, nesse caso, a segunda lei de Newton para a rotação — dizemos que o torque resultante é igual à variação da quantidade de momento angular durante certo tempo. Confira a similaridade destas equações:
+        $$F_{R} = \frac{Q_{F} - Q_{I}}{\Delta t} \hspace{2cm} \tau_{r} = \frac{L_{F} - L_{I}}{\Delta t} \\
+        \rightarrow Q = m.v \hspace{3cm} \rightarrow L = r.m.v.\sin\theta $$
+      </p>
+      <h4>Torque resultante</h4>
+      <p>
+        uando aplicada a corpos sujeitos a movimentos de rotação, a segunda lei de Newton afirma que o torque resultante sobre um corpo é igual ao produto de seu momento de inércia por sua aceleração, além disso, em todos os casos, é possível calcular o torque pela fórmula $\tau = rF\sin\theta$, em que $\theta$ é o ângulo entre o braço de alavanca (r) e a força aplicada (F).
+      </p>
+      <p>O torque resultante é determinado pela soma vetorial de todos os torques que atuam sobre um corpo, ademais, no caso em que a soma dos torques é nula, esse corpo tenderá a permanecer em equilíbrio rotacional: parado ou em movimento circular uniforme, ou seja, girando com velocidade constante.</p>
+    </article>
         <a
           href="https://mundoeducacao.uol.com.br/fisica/torque-ou-momento-de-uma-forca.htm"
-        >
-        </a>
+        >Torque ou momento de uma força</a>
       </p>
     </article>
   </body>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script
+    type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  ></script>
 </html>
